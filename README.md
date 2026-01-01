@@ -42,7 +42,7 @@
 ---
 
 ### Step 2：用 GoMusic 导出歌单纯文本
-打开 GoMusic： https://music.unmeta.cn/ ，输入歌单链接，得到纯文本，例如：
+打开 GoMusic（项目仓库：https://github.com/Bistutu/GoMusic）：https://music.unmeta.cn/ ，输入歌单链接，得到纯文本，例如：
 
 ```text
 Soviet March - 群星
@@ -64,7 +64,7 @@ MASURAO - 川井宪次
 ---
 
 ### Step 4：运行脚本生成“椒盐音乐歌单”（电脑端）
-椒盐音乐原生创建歌单后导出的文本形如：
+椒盐音乐原生创建歌单后导出的文本形如：（参考：椒盐音乐开源仓库 https://github.com/Moriafly/SaltPlayerSource）
 
 ```text
 /storage/emulated/0/Music/曲库/Akasha Pulses, the Kalpa Flame Rises (Nahida Theme) (Nahida Version) - tnbee.wav
@@ -154,6 +154,18 @@ python convert_playlists.py
 
 ---
 
+## 相关项目 / 致谢
+
+本项目的输入/输出格式与使用体验，离不开以下开源项目（在此致谢与引用）：
+
+- 椒盐音乐（Salt Player）源码仓库：<https://github.com/Moriafly/SaltPlayerSource>  
+  本项目输出的歌单为椒盐音乐可导入的“手机绝对路径歌单”。
+
+- GoMusic 仓库：<https://github.com/Bistutu/GoMusic>  
+  本项目的输入歌单文本来自 GoMusic 导出的 `<曲名 - 歌手>` 纯文本格式。
+
+---
+
 ## 常见问题（FAQ）
 
 ### Q1：为什么有些条目匹配不到？
@@ -173,6 +185,10 @@ python convert_playlists.py
 
 - 尽量保证“电脑曲库文件名”和“手机端最终文件名”完全一致（复制/压缩解压通常较稳）
 - 不要在脚本里盲目把全角空格替换成半角空格（可能适得其反）
+
+## AI 生成说明
+
+本项目代码与文档由 AI 辅助生成并经本地测试迭代。除 GoMusic 与 椒盐音乐（Salt Player）相关的仓库/网站/产品行为外，无其他定向参考依据。
 
 ---
 
